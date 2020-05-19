@@ -7,7 +7,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class CustomersReader {
+public class CustomersReader {
+
+    private CustomersReader(){
+    }
+
     public static Map<String, Customer> readCustomersDataFromFile(String fileName){
         Map<String, Customer> customerMap = new HashMap<>();
         try(
